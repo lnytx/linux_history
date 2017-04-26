@@ -1,0 +1,14 @@
+2017-04-25 23:38:37,775 connectionpool.py 207 [DEBUG] Starting new HTTP connection (1): 172.17.39.225
+2017-04-25 23:38:37,778 connectionpool.py 395 [DEBUG] http://172.17.39.225:8000 "GET /home?history_id=416&history_ip=192.168.153.129&history_user=root&history_datetime=2017-04-25+23%3A38%3A33&history_command=rm+omsys.log HTTP/1.1" 301 None
+2017-04-25 23:38:37,780 connectionpool.py 242 [DEBUG] Resetting dropped connection: 172.17.39.225
+2017-04-25 23:38:37,880 connectionpool.py 395 [DEBUG] http://172.17.39.225:8000 "GET /home/?history_id=416&history_ip=192.168.153.129&history_user=root&history_datetime=2017-04-25+23%3A38%3A33&history_command=rm+omsys.log HTTP/1.1" 200 None
+2017-04-25 23:38:38,885 connectionpool.py 207 [DEBUG] Starting new HTTP connection (1): 172.17.39.225
+2017-04-25 23:38:38,889 connectionpool.py 395 [DEBUG] http://172.17.39.225:8000 "GET /home?history_id=417&history_ip=192.168.153.129&history_user=root&history_datetime=2017-04-25+23%3A38%3A38&history_command=ls HTTP/1.1" 301 None
+2017-04-25 23:38:38,891 connectionpool.py 242 [DEBUG] Resetting dropped connection: 172.17.39.225
+2017-04-25 23:38:38,933 connectionpool.py 395 [DEBUG] http://172.17.39.225:8000 "GET /home/?history_id=417&history_ip=192.168.153.129&history_user=root&history_datetime=2017-04-25+23%3A38%3A38&history_command=ls HTTP/1.1" 200 None
+2017-04-25 23:38:42,578 connectionpool.py 207 [DEBUG] Starting new HTTP connection (1): 172.17.39.225
+2017-04-25 23:38:42,581 connectionpool.py 395 [DEBUG] http://172.17.39.225:8000 "GET /home?history_id=418&history_ip=192.168.153.129&history_user=root&history_datetime=2017-04-25+23%3A38%3A42&history_command=history HTTP/1.1" 301 None
+2017-04-25 23:38:42,583 connectionpool.py 242 [DEBUG] Resetting dropped connection: 172.17.39.225
+2017-04-25 23:38:42,709 connectionpool.py 395 [DEBUG] http://172.17.39.225:8000 "GET /home/?history_id=418&history_ip=192.168.153.129&history_user=root&history_datetime=2017-04-25+23%3A38%3A42&history_command=history HTTP/1.1" 200 None
+2017-04-25 23:39:41,466 connectionpool.py 207 [DEBUG] Starting new HTTP connection (1): 172.17.39.225
+2017-04-25 23:39:42,490 OMAudit_agent.py 56 [ERROR] connection django-cgi server error:HTTPConnectionPool(host='172.17.39.225', port=8000): Max retries exceeded with url: /home?history_id=419&history_ip=192.168.153.129&history_user=root&history_datetime=2017-04-25+23%3A39%3A13&history_command=vi+%2Fetc%2Fprofile (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f10d62ffa20>: Failed to establish a new connection: [Errno 111] Connection refused',))

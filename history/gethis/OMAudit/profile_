@@ -1,0 +1,15 @@
+#add by OMAudit
+export HISTFILE=$HOME/.bash_history#指定用户history日志存放路径
+export HISTSIZE=1200 #指定history命令输出记录数
+export HISTFILESIZE=1200 #指定历史记录文件.bash_history最大的存储行数
+export HISTCONTROL=ignoredups #不记录连续重复的命令
+export HISTTIMEFORMAT="`whoami` %F %T " #history我更无语显示当前记录的用户与时间
+#PROMPT_COMMAND变量最为核心，实现了指定内容在出现bash提示符前执行的功能;
+#就是说先执行PROMPT_COMMAND变量
+#history -a 将目前新增的history命令写入histfiles中;history -c删除记录的所有命令（仅内存)
+#history -s 将histfiles的内容读到内存中，即可以通过history查看
+#/soft/python_scripts/auto_master/OMAudit_agent.py脚本，做后续的命令数据信息上报
+export PROMPT_COMMAND="history -a; history -c; history -r;"'/soft/python_scripts/auto_master/OMAudit_agent.py $(history 1)'
+shopt -s histappend #历史清单将以添加形式加入HISTFILE变量指定的文件，而不是覆盖, 多个回话之间实时共享历史
+typeset -r PROMPT_COMMAND #设置关键变量只读，提高安全性
+typeset -r HISTTIMEFORMA
